@@ -49,7 +49,7 @@ nav li {
 nav li a {
     display: block;
     color: #fff;
-    text-align: 0.5em 1em;
+    padding: 0.5em 1em;
     text-decoration: none;
 }
 /* style rules for main*/
@@ -89,7 +89,7 @@ main{
 }
 
 .external-link{
-    columns: #666600;
+    color: #666600;
     font-weight: bold;
     text-decoration: none;
 }
