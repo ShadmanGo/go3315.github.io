@@ -97,7 +97,7 @@ main{
     color: #fff;
     text-decoration: none;
     font-size: 1.5em;
-    border-radius: 5px;
+    display: block;
 }
 
 .hours {
@@ -137,7 +137,7 @@ main{
 .map{
     border: 2px solid #000 ;
     width: 95%;
-    height: 50;
+    height: 50%;
 }
 /* style rules for footer*/
 
@@ -152,11 +152,49 @@ footer p a{
     color: #fff;
     text-decoration: none;
 }
-/* #excercises{
-    clear: left;
+
+/* media query for tablet viewport */
+@media screen and (min-width: 630 px), print {
+    /* tablet viewport: show tablet-desktop class, hide mobile class */
+    .tabket-desktop {
+        display: block;
+    }
+    .mobile {
+        display: none;
+    }
+    
+    /*  style rule for header */
+    header {
+        position: static;
+        padding-bottom: 2%;
+    }
+        /*  tablet style rule for nav area */
+    nav li {
+        border-top: none;
+        display: inline-block;
+        border-right: 1px solid #fff;
+
+    } 
+
+    nav li:last-child {
+        border-right: none;
+
+    }
+
+    nav li a {
+        padding: 0.1em 0.75em;
+    }
+    
+        /*  style rule for main content area tablet */
+        main ul {
+            margin: 0 0 4% 10%;
+        }
+ #excercises{
+    
     border-top: 1px solid #000;
     border-bottom: 1px solid #000;
     background-color: #f2f2f2;
+    background: linear-gradient(to right, #ccc, #fff);
     padding: 1% 2%;
 }
 
@@ -166,4 +204,97 @@ footer p a{
 
 #excercises dd{
     padding: 0.5% 1% 2% 0;
-} */
+} 
+
+.tel-num {
+    font-size: 1.25em;
+}
+
+.map {
+    width: 600px;
+    height: 450px;
+}
+
+
+
+
+
+
+
+}
+
+/* media query for desktop viewport */
+@media screen and (min-width: 1015px), print {
+/* style rule for header desktop viewport */
+    header {
+        width: 25%;
+        float: left;
+        padding-bottom: 0%;
+    }
+/* style rules for nav area for desktop viewport */
+    nav {
+        float: right;
+        width: 70%;
+        padding-bottom: 4em 1em 0 0;
+    }
+
+    nav ul {
+        text-align: right;
+
+    }
+    nav li {
+        border: none;
+    }
+
+    nav li a {
+        padding: o.5em 1em;
+    }
+nav li a:hover {
+    color: black;
+    background-color: #fff;
+}
+
+    /* style rules for main content for desktop viewport */
+
+        main {
+            clear: left;
+        }
+        
+        main h1 {
+            font-size: 1.8em;
+        }
+
+        #weights, #cardio, #training {
+            width: 29%;
+            float: left;
+            margin: 0 2%;
+
+
+        }
+
+            #excercises {
+                clear: left;
+            }
+
+
+
+}
+
+/* media query for  large desktop viewport */
+@media scren and (min-width: 1921px), print {
+    #container {
+        width: 1920px;
+        margin: 0 auto;
+    }
+
+
+
+}
+
+/* media query for print */
+
+body {
+    background-color: #fff;
+    color: black;
+
+}
