@@ -5,7 +5,7 @@ file name: styles.css
 */
 
 /* css reset */
-body, header, nav, main, footer, h1, div, img, ul, figure, figcaption, section, article, aside{
+body, header, nav, main, footer, h1, div, img, ul, figure, figcaption, section, article, aside, audio, video{
     margin: 0;
     padding: 0;
     border: 0;
@@ -14,7 +14,7 @@ body, header, nav, main, footer, h1, div, img, ul, figure, figcaption, section, 
 body {
     background-color: #000
 }
-img{
+img, video{
     max-width: 100%;
     display: block;
 }
@@ -86,6 +86,9 @@ main{
     font-size: 1.25em;
     font-family: 'Roboto Slab', sans-serif;
 
+}
+video {
+margin: 0 auto 4%;
 }
 
 .mobile h3{
@@ -217,7 +220,7 @@ label {
     padding-top: 3%;
 }
 
-form #sumbit {
+form #submit selector {
     margin: 0 auto;
     border: none;
     display: block;
@@ -244,7 +247,7 @@ footer p a{
 /* media query for tablet viewport */
 @media screen and (min-width: 630px), print {
     /* tablet viewport: show tablet-desktop class, hide mobile class */
-    .tabket-desktop {
+    .tablet-desktop {
         display: block;
     }
     .mobile {
